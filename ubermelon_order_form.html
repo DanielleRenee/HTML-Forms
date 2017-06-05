@@ -36,12 +36,13 @@
         </tr>
       </table>
       <br>
-      <form>
+      <form action="https://ubermelon-order-form.herokuapp.com/process" method="GET">
+
         First Name: <input type="text" name="firstname">
         Last Name: <input type="text" name="lastname">
-      </form>
+      
       <br>
-      <form>
+      
         Melon Type:
           <select name="melontype">
             <option value="select-one">Select One</option>
@@ -51,35 +52,35 @@
             <option value="crenshaw">Crenshaw</option>
             <option value="canary">Canary</option>
           </select>
-      </form>
+      
        <br>
-      <form>
+      
         Quantity*: <input type="text" name="quantity">
-      </form>
+      
       <br>
-      <form>
+      
         Delivery Time: 
           <input type="radio" name="time" value="am">12:00am-12:00pm
           <input type="radio" name="time" value="pm">12:00pm-12:00am
           <input type="radio" name="time" value="wat">Time is an illusion
-      </form>
+      
       <br>
-      <form>
+      
         Returning Customer?: 
           <input type="radio" name="returning" value="yes">Yes
           <input type="radio" name="returning" value="no">No
-      </form>
+      
       <br>
-      <form>
+      
         For Statistical Purposes: 
           <input type="checkbox" name="stats" value="dog">Dog
           <input type="checkbox" name="stats" value="cat">Cat
           <input type="checkbox" name="stats" value="hedgehog">Hedgehog
           <input type="checkbox" name="stats" value="balloonicorn">Balloonicorn
           <input type="checkbox" name="stats" value="yak">Yak
-      </form>
+      
       <br>
-      <form action="https://ubermelon-order-form.herokuapp.com/process" method="GET">
+      
         <input type="submit">
       </form>
       *Quantities are given by the flat.
